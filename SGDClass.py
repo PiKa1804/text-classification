@@ -42,7 +42,7 @@ def Classif(tek):
         
         y_test = np.array(test_labels)
         #print(metrics.classification_report(y_test, test_predictions))
-        #print("Trafnosc: %0.4f" % metrics.accuracy_score(y_test, test_predictions))
+        #print("%0.4f" % metrics.accuracy_score(y_test, test_predictions))
         
         check = vectorizer.transform([tek[i]])
         pred=clf.predict(check)
